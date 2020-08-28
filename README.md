@@ -5,7 +5,7 @@
 - Nome: Bruno Passamai Alvarenga
 - Matrícula: 13.2.8458 
 - Curso: Engenharia de Computação
-- Semestre/Ano correntes: 2020/3 - PLE Emergencial COVID-19 
+- Semestre/Ano correntes: 2020/3 - PLE
 - Link para o seu GitHub: https://github.com/brunopaa
 
 ## [Projeto final:](./Projeto/README.md) 

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de pessoas</title>
+    <link rel="stylesheet" href="forms.css">
+</head>
+
+<body>
+    <a href="Home.html">Home</a>
+    <a href="">Lançamentos</a>
+    <a href="Relatorios.html">Relatório</a>
+    <a href="Perfil.html">Perfil</a>
+    <a href="">Sair</a>
+
+
+    <h1>Dados do cadastro da pessoa</h1>
+
+    <form method="get" action="validar.html">
+
+        <div class="controle">
+            <label for="nome">Nome:</label>
+            <input type="text" name="nome" id="nome" placeholder="Digite aqui seu nome">
+        </div>
+
+        <div class="controle">
+            <label for="endereco">Endereço:</label>
+            <input type="text" name="endereco" id="nome" placeholder="Digite aqui seu endereço">
+        </div>
+        <div>
+            <label>Gênero:</label>
+
+            <div>
+                <input type="radio" name="genero" id="feminino" value="1">
+                <label for="feminino">Feminino</label>
+            </div>
+
+            <div>
+                <input type="radio" name="genero" id="masculino" value="2">
+                <label for="masculino">Masculino</label>
+            </div>
+        </div>
+
+
+        <input type="submit" value="Cadastrar">
+
+    </form>
+
+
+    <a href="Home.html">Voltar</a>
+</body>
+
+</html>

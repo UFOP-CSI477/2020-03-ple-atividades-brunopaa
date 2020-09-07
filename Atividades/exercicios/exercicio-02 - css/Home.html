@@ -1,69 +1,103 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="utf-8">
-        <title>ELETRÔCELL HTML</title>
-        <style type="text/css">
-            body {
-            margin: 0;
-            }
-            
-            h1,h2,h3,h4{
-            margin: 0; 
-            }
-            
-            h1{
-                font-size: 40pt;
-                color:rgb(50, 30, 223);
-            }
 
-           .info{
-                font-size: 20pt;
-                color:royalblue;
+<head>
+    <meta charset="utf-8">
+    <title>ELETRÔCELL HTML</title>
+    <style type="text/css">
+        @import url('https://fonts.googleapis.com/css2?family=Grandstander:wght@400;700&display=swap');
 
-            }
-
-            #codigo{
-                border-color:rgb(253, 7, 7);
-                color:yellow;
-                border-style: solid;
-                border-radius: 15px;
-            }
-        
-        </style>
-    </head>
-    
-    <body>
+        body {}
 
 
-       
-     
-        <div >
-        <div id=codigo>
-            <a href="Cadastros.html" >
-                Cadastro
-            </a>
-        </div>
+        html {
+            font-family: 'Grandstander', cursive;
+            font-size: 14px;
+        }
 
-        <div> <a href="">Lançamentos</a></div>
-        <div><a href="Relatorios.html">Relatório</a></div> 
-        <div><a href="Perfil.html" >Perfil</a></div>
-        <div><a href="" >Sair</a></div>
+        h1,
+        h2,
+        h3,
+        h4 {
+            margin-top: 0;
+        }
+
+        a {
+
+            color: white;
+            background-color: blue;
+            text-decoration: none;
+            padding: 10px;
+        }
+
+        a:hover {
+            background-color: chartreuse;
+            font-weight: bold;
+        }
+
+        a:active {
+            background-color: green;
+            color: black;
+        }
+
+        a:link {
+            text-decoration: underline;
+            color: yellow;
+        }
+
+        a:visited {
+            color: gray;
+        }
+
+        .flex {
+            display: flex;
+            flex-direction: row;
+            flex-flow: row wrap;
+            justify-content: center;
+        }
+
+        .flex div {
+
+            border-radius: 20px;
+        }
+
+        h1 {
+            font-size: 40pt;
+            color: rgb(50, 30, 223);
+        }
+
+        .info {
+            font-size: 20pt;
+            color: royalblue;
+
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="flex">
+        <div><a href="Cadastros.html">Cadastro</a></div>
+        <div><a href="Lancamentos.html">Lançamentos</a></div>
+        <div><a href="Relatorios.html">Relatório</a></div>
+        <div><a href="Perfil.html">Perfil</a></div>
+        <div><a href="">Sair</a></div>
     </div>
 
-        <h1>Bem vindo a todos!</h1>
-        <h2>Curso de programação Web</h2>
-        <h3>Início do curso em HTML</h3>
-        <h4>Um ótimo curso para vocês</h4>
+    <h1>Bem vindo a todos!</h1>
+    <h2>Curso de programação Web</h2>
+    <h3>Início do curso em HTML</h3>
+    <h4>Um ótimo curso para vocês</h4>
 
-       <p>Este um curso de introdução à Programação Web. Na aula
-            de hoje estudaremos HTML.</p>
-        <!--Comentário-->   
-        <p class=info>Texto em parágrafo</p>
+    <p>Este um curso de introdução à Programação Web. Na aula
+        de hoje estudaremos HTML.</p>
+    <!--Comentário-->
+    <p class=info>Texto em parágrafo</p>
 
-      
-        
 
-        <img src="../exercicio-01/img/123.jpg" alt="Note 8" width="20%">
-    </body>
+
+
+    <img src="../exercicio-01/img/123.jpg" alt="Note 8" width="20%">
+</body>
+
 </html>

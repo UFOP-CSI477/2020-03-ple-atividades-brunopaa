@@ -9,16 +9,21 @@
 
     html {
       font-family: 'Grandstander', cursive;
-      font-size: 20px;
+      font-size: 16px;
+
     }
 
-    
+
+
     a {
 
-      color: white;
-      background-color: blue;
+      border: 2px solid #000000;
+      background-color: #b5a8ff;
+      border-radius: 5px;
+      padding: 1em;
+      background-color: rgb(83, 51, 136);
       text-decoration: none;
-      padding: 10px;
+
     }
 
     a:hover {
@@ -42,22 +47,25 @@
 
     .flex {
       display: flex;
-      flex-direction: row;
-      flex-flow: row wrap;
-      justify-content: center;
+      flex-wrap: unset;
     }
 
-    .flex div {
-      border-radius: 20px;
+
+
+    p {
+      font-size: 14pt;
+      margin-top: 1;
+      text-indent: 2ch;
+
+
     }
 
-    h1 {
-      font-size: 40pt;
-      color: rgb(50, 30, 223);
+    .aligncenter {
+      text-indent: 2ch;
     }
 
     .info {
-      font-size: 20pt;
+      font-size: 14pt;
       color: royalblue;
 
     }
@@ -69,19 +77,19 @@
 
 <body>
   <div class="flex">
-  <a href="Home.html">Home</a>
-  <a href="Cadastros.html">Cadastro</a>
-  <a href="">Lançamentos</a>
-  <a href="Relatorios.html">Relatório</a>
-  <a href="">Sair</a>
-</div>
+    <div><a href="Home.html">Home</a></div>
+    <div><a href="Cadastros.html">Cadastro</a></div>
+    <div><a href="Lancamentos.html">Lançamentos</a></div>
+    <div><a href="Relatorios.html">Relatório</a></div>
+    <div><a href="">Sair</a></div>
+  </div>
 
   <p>Nome: Edvaldo Abravanel</p>
   <p>Usuário: edabravirgs</p>
   <p>Email: edabravirgs@stbmail.com.br</p>
   <p>Data de Criação: 28/08/2020</p>
-  <img src="../exercicio-01/img/ed.jpg" alt="ed" width="20%">
-
+  <p class="aligncenter"><img src="../exercicio-01/img/ed.jpg" alt="ed" width="20%" class="center">
+  </p>
 </body>
 
 </html>

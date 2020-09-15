@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+    <script src="/Atividades/atividade-pratica-01/javascript/rolima.js"></script>
+
+
+    <title>Corrida de carros de rolimã</title>
+
+    <div class="jumbotron">
+        <h1>Corrida de Carros de rolimã</h1>
+    </div>
+
+</head>
+
+<body>
+
+
+    <div class="table-responsive">
+        <table class="table table-bordered table-hover table-striped">
+
+            <caption>Dados</caption>
+
+            <thead>
+
+                <tr class="thead-dark">
+                    <th>Largada
+                    </th>
+                    <th>Nome do Competidor</th>
+                    <th>Tempo(s)</th>
+
+                </tr>
+
+            </thead>
+
+
+
+            <tbody>
+                <form name="frmDados">
+                    <tr class="table-primary">
+
+                        <td>
+
+                            <div class="form-group">
+                                <label for="posicao"></label>
+                                <input type="number" name="posicao" id="posicao1" placeholder="Digite aqui a posição"
+                                    class="form-control">
+                            </div>
+                        </td>
+                        <td>
+                            <div class="form-group">
+                                <label for="nome"></label>
+                                <input type="text" name="nome" id="nome1" placeholder="Digite aqui o nome"
+                                    class="form-control">
+                            </div>
+                        </td>
+
+                        <td>
+                            <div class="form-group">
+                                <label for="nome"></label>
+                                <input type="number" name="tempo" id="tempo1" placeholder="Digite aqui o tempo"
+                                    class="form-control">
+                            </div>
+                        </td>
+                    </tr>
+
+                    <tr class="table-success">
+                        <td>
+
+                            <div class="form-group">
+                                <label for="posicao"></label>
+                                <input type="number" name="posicao" id="posicao2" placeholder="Digite aqui a posição"
+                                    class="form-control" max="6" min="1">
+                            </div>
+                        </td>
+                        <td>
+                            <div class="form-group">
+                                <label for="nome"></label>
+                                <input type="text" name="nome" id="nome2" placeholder="Digite aqui o nome"
+                                    class="form-control">
+                            </div>
+                        </td>
+
+                        <td>
+                            <div class="form-group">
+                                <label for="nome"></label>
+                                <input type="number" name="tempo" id="tempo2" placeholder="Digite aqui o tempo"
+                                    class="form-control">
+                            </div>
+                        </td>
+
+                    </tr>
+
+                    <tr>
+                        <td>
+
+                            <div class="form-group">
+                                <label for="posicao"></label>
+                                <input type="number" name="posicao" id="posicao3" placeholder="Digite aqui a posição"
+                                    class="form-control">
+                            </div>
+                        </td>
+                        <td>
+                            <div class="form-group">
+                                <label for="nome"></label>
+                                <input type="text" name="nome" id="nome3" placeholder="Digite aqui o nome"
+                                    class="form-control">
+                            </div>
+                        </td>
+
+                        <td>
+                            <div class="form-group">
+                                <label for="nome"></label>
+                                <input type="number" name="tempo" id="tempo3" placeholder="Digite aqui o tempo"
+                                    class="form-control">
+                            </div>
+                        </td>
+
+                    </tr>
+
+                    <tr>
+                        <td>
+
+                            <div class="form-group">
+                                <label for="posicao"></label>
+                                <input type="number" name="posicao" id="posicao4" placeholder="Digite aqui a posição"
+                                    class="form-control">
+                            </div>
+                        </td>
+                        <td>
+                            <div class="form-group">
+                                <label for="nome"></label>
+                                <input type="text" name="nome" id="nome4" placeholder="Digite aqui o nome"
+                                    class="form-control">
+                            </div>
+                        </td>
+
+                        <td>
+                            <div class="form-group">
+                                <label for="nome"></label>
+                                <input type="number" name="tempo" id="tempo4" placeholder="Digite aqui o tempo"
+                                    class="form-control">
+                            </div>
+                        </td>
+
+                    </tr>
+
+                    <tr>
+                        <td>
+
+                            <div class="form-group">
+                                <label for="posicao"></label>
+                                <input type="number" name="posicao" id="posicao5" placeholder="Digite aqui a posição"
+                                    class="form-control">
+                            </div>
+                        </td>
+                        <td>
+                            <div class="form-group">
+                                <label for="nome"></label>
+                                <input type="text" name="nome" id="nome5" placeholder="Digite aqui o nome"
+                                    class="form-control">
+                            </div>
+                        </td>
+
+                        <td>
+                            <div class="form-group">
+                                <label for="nome"></label>
+                                <input type="number" name="tempo" id="tempo5" placeholder="Digite aqui o tempo"
+                                    class="form-control">
+                            </div>
+                        </td>
+
+                    </tr>
+
+                    <tr>
+                        <td>
+
+                            <div class="form-group">
+                                <label for="posicao"></label>
+                                <input type="number" name="posicao" id="posicao6" placeholder="Digite aqui a posição"
+                                    class="form-control">
+                            </div>
+                        </td>
+                        <td>
+                            <div class="form-group">
+                                <label for="nome"></label>
+                                <input type="text" name="nome" id="nome6" placeholder="Digite aqui o nome"
+                                    class="form-control">
+                            </div>
+                        </td>
+
+                        <td>
+                            <div class="form-group">
+                                <label for="nome"></label>
+                                <input type="number" name="tempo" id="tempo6" placeholder="Digite aqui o tempo"
+                                    class="form-control">
+                            </div>
+                        </td>
+
+                    </tr>
+
+                    <tr>
+                        <td colspan="3">
+
+                            <button type="button" class="btn btn-primary col-sm-2"
+                                onclick="carregaDadosForm()">Cadastrar</button>
+                            <input type="reset" value="Limpar" class="btn btn-danger">
+
+                        </td>
+                    </tr>
+                </form>
+
+
+
+
+            </tbody>
+
+
+
+
+            <tfoot>
+
+                <tr>
+                    <td colspan="2">Quantidade</td>
+                    <td colspan="2">6</td>
+
+
+                </tr>
+
+            </tfoot>
+
+
+        </table>
+
+
+    </div>
+
+    <div class="table-responsive" id="resultado">
+        <table class="table table-bordered table-hover table-striped">
+
+            <caption>Resultados</caption>
+
+            <thead>
+
+                <tr class="thead-dark">
+                    <th>Largada</th>
+                    <th>Chegada</th>
+                    <th>Nome do Competidor</th>
+                    <th>Tempo(s)</th>
+                    <th>Resultado</th>
+
+                </tr>
+
+            </thead>
+
+            <form name="frmDados2">
+                <tbody>
+
+
+                    <tr>
+                        <td>
+                            <p id="largadaR0"></p>
+                        </td>
+                        <td>
+                            <p id="chegadaR0"></p>
+                        </td>
+                        <td>
+                            <p id="nomeR0"></p>
+                        </td>
+                        <td>
+                            <p id="tempoR0"></p>
+                        </td>
+                        <td>
+                            <p id="resultR0"></p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p id="largadaR1"></p>
+                        </td>
+                        <td>
+                            <p id="chegadaR1"></p>
+                        </td>
+                        <td>
+                            <p id="nomeR1"></p>
+                        </td>
+                        <td>
+                            <p id="tempoR1"></p>
+                        </td>
+                        <td>
+                            <p id="resultR1"></p>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <p id="largadaR2"></p>
+                        </td>
+                        <td>
+                            <p id="chegadaR2"></p>
+                        </td>
+                        <td>
+                            <p id="nomeR2"></p>
+                        </td>
+                        <td>
+                            <p id="tempoR2"></p>
+                        </td>
+                        <td>
+                            <p id="resultR2"></p>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <p id="largadaR3"></p>
+                        </td>
+                        <td>
+                            <p id="chegadaR3"></p>
+                        </td>
+                        <td>
+                            <p id="nomeR3"></p>
+                        </td>
+                        <td>
+                            <p id="tempoR3"></p>
+                        </td>
+                        <td>
+                            <p id="resultR3"></p>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <p id="largadaR4"></p>
+                        </td>
+                        <td>
+                            <p id="chegadaR4"></p>
+                        </td>
+                        <td>
+                            <p id="nomeR4"></p>
+                        </td>
+                        <td>
+                            <p id="tempoR4"></p>
+                        </td>
+                        <td>
+                            <p id="resultR4"></p>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <p id="largadaR5"></p>
+                        </td>
+                        <td>
+                            <p id="chegadaR5"></p>
+                        </td>
+                        <td>
+                            <p id="nomeR5"></p>
+                        </td>
+                        <td>
+                            <p id="tempoR5"></p>
+                        </td>
+                        <td>
+                            <p id="resultR5"></p>
+                        </td>
+                    </tr>
+
+
+
+
+
+                </tbody>
+            </form>
+
+
+        </table>
+
+
+
+
+
+
+
+
+
+
+</body>
+
+</html>

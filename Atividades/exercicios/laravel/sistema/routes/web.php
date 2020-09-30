@@ -14,11 +14,18 @@ use Illuminate\Support\Facades\Route;
 */
 use App\Models\Estado;
 use App\Models\Produto;
+use App\Http\Controllers\EstadoController;
+use App\Http\Controllers\ProdutoController;
 
 Route::get('/', function () {
-    return view('welcome');
-});
+    return view('principal');
 
+})->name('principal');
+
+Route::resource('/estados', EstadoController::class);
+Route::resource('/produtos', ProdutoController::class);
+
+/*
 Route::get('/ola', function () {
     return 'Olá,mundo!';
 });
@@ -54,3 +61,4 @@ Route::get('/produtos/{id}', function ($id) {
 
     return view('lista',['dados'=>$produto]);
 });
+*/

@@ -39,6 +39,8 @@
             </ul>
         </nav>
 
+        
+
         <!-- https://laravel.com/docs/8.x/responses#redirecting-with-flashed-session-data //-->
         @if(session('mensagem'))
 

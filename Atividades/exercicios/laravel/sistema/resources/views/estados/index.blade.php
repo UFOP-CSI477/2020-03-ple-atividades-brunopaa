@@ -2,7 +2,9 @@
 
 @section('conteudo')
 
-<table class="table table-bordered table-hover table-striped">
+    <a href="{{ route('estados.create')}}">Cadastrar</a>
+
+    <table class="table table-bordered table-hover table-striped">
     <thead class="thead-dark">
         <tr>
             <th>Id</th>
@@ -18,10 +20,11 @@
                 <td>{{ $e->id }}</td>
                 <td>{{ $e->nome }} </td>
                 <td>{{ $e->sigla }}</td>
+                <td><a href="{{route('estados.show', $e->id)}}">Exibir</a></td>
             </tr>
         @endforeach
     </tbody>
-</table>
+    </table>
 
 
 @endsection

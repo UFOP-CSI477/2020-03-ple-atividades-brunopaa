@@ -11,4 +11,9 @@ class Estado extends Model
 
     protected $fillable = ['nome', 'sigla'];
   /*   protected $guarded = ['senha']; */
+
+  //1-estado -> tem muitas cidades;
+  public function cidades(){
+      return $this->hasMany(Cidade::class);
+  }
 }

@@ -96,10 +96,17 @@ class EstadoController extends Controller
     public function destroy(Estado $estado)
     {
         //dd($estado);
-
         //Validação: 
+        if($estado->cidades->count() > 0){
+
+            session()->flash('mensagem', 'Exclusão não permitida! Existem cidades associadas.');
+            return redirect()->route('estados.index');
+        }else{
+
         $estado->delete();
         session()->flash('mensagem', 'estado excluído com sucesso!');
         return redirect()->route('estados.index');
+   
+        }
     }
 }

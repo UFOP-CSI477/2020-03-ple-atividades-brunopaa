@@ -16,9 +16,13 @@
     Urgente
 @endif</p>
 
-<a href="{{route('registros.edit', $registro->id)}}">Editar</a>
 
-<a href= "{{route('registros.index')}}">Voltar</a>
+<div style="text-align: center">
+    <a href="{{route('registros.edit', $registro->id)}}">Editar</a>
+
+    <a href= "{{route('registros.index')}}">Voltar</a>
+</div>
+
 
 <form name="frmDelete"
     action="{{ route('registros.destroy', $registro->id)}}"

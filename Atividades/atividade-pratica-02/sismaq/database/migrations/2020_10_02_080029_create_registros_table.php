@@ -21,6 +21,9 @@ class CreateRegistrosTable extends Migration
             $table->date('datalimite');
             $table->integer('tipo');
 
+            $table->foreign('equipamento_id')->references('id')->on('equipamentos');
+            $table->foreign('user_id')->references('id')->on('users');
+
 
 
             $table->timestamps();

@@ -11,7 +11,7 @@
     <?php       
     
         $user = "Bro";
-        echo "TESTE ESSA PORRA, $user"; 
+        echo 'Versão Atual do PHP: ' . phpversion();
     
     
     ?>

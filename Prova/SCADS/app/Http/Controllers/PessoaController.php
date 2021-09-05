@@ -9,11 +9,7 @@ use Illuminate\Support\Facades\Auth;
 
 class PessoaController extends Controller
 {
-    /**
-     * Display a listing of the resource.
-     *
-     * @return \Illuminate\Http\Response
-     */
+ 
     public function index()
     {
         if (Auth::check()) {
@@ -26,11 +22,6 @@ class PessoaController extends Controller
         }
     }
 
-    /**
-     * Show the form for creating a new resource.
-     *
-     * @return \Illuminate\Http\Response
-     */
     public function create()
     {
         if (Auth::check()) {
@@ -42,12 +33,6 @@ class PessoaController extends Controller
         }
     }
 
-    /**
-     * Store a newly created resource in storage.
-     *
-     * @param  \Illuminate\Http\Request  $request
-     * @return \Illuminate\Http\Response
-     */
     public function store(Request $request)
     {
         //dd($request);
@@ -62,12 +47,7 @@ class PessoaController extends Controller
         }
     }
 
-    /**
-     * Display the specified resource.
-     *
-     * @param  \App\Models\Equipamento  $equipamento
-     * @return \Illuminate\Http\Response
-     */
+  
     public function show(Pessoa $pessoa)
     {
         if (Auth::check()) {
@@ -78,12 +58,7 @@ class PessoaController extends Controller
         }
     }
 
-    /**
-     * Show the form for editing the specified resource.
-     *
-     * @param  \App\Models\Equipamento  $equipamento
-     * @return \Illuminate\Http\Response
-     */
+ 
     public function edit(Pessoa $pessoa)
     {
         if (Auth::check()) {
@@ -94,13 +69,6 @@ class PessoaController extends Controller
         }
     }
 
-    /**
-     * Update the specified resource in storage.
-     *
-     * @param  \Illuminate\Http\Request  $request
-     * @param  \App\Models\Equipamento  $equipamento
-     * @return \Illuminate\Http\Response
-     */
     public function update(Request $request, Pessoa $pessoa)
     {
         if (Auth::check()) {
@@ -114,12 +82,6 @@ class PessoaController extends Controller
         }
     }
 
-    /**
-     * Remove the specified resource from storage.
-     *
-     * @param  \App\Models\Equipamento  $equipamento
-     * @return \Illuminate\Http\Response
-     */
     public function destroy(Pessoa $pessoa)
     {
         if (Auth::check()) {
